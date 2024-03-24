@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de desenvolvimento web</title>
+    <!-- font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+
+</head>
+
+<body>
+
+    <main class="main">
+        <div class="container">
+            <header class="header">
+                <h1>Quiz</h1>
+                <h2>Desenvolvimento Web</h2>
+            </header>
+            <section class="play">
+                <button class="btn-modal"><i class="fa fa-gamepad"></i> Jogar</button>
+            </section>
+        </div>
+    </main>
+
+
+    <div class="background hide">
+        <div class="modal">
+            <span class="btn-close"><i class="fa fa-times"></i></span>
+            <h2>Configurações</h2>
+            <form action="/game.html" method="get">
+
+                <div class="box">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                </div>
+
+                <div class="box">
+                    <label for="dificulty">Dificuldade</label>
+                    <select id="dificulty" name="dificulty">
+                        <option value="easy">Facil</option>
+                        <option value="medium">Medio</option>
+                        <option value="hard">Dificil</option>
+                    </select>
+                </div>
+
+                <div class="box">
+                    <label for="">
+                        Tecnologia
+                    </label>
+                    <div class="techs">
+                        <div class="tech">
+                            <input type="radio" name="tech" id="html" value="HTML5" checked>
+                            <label for="html"><i class="fab fa-html5"></i></label>
+                        </div>
+                        <div class="tech">
+                            <input type="radio" name="tech" id="css" value="CSS3">
+                            <label for="css"><i class="fab fa-css3"></i></label>
+                        </div>
+                        <div class="tech">
+                            <input type="radio" name="tech" id="js" value="Javascript">
+                            <label for="js"><i class="fab fa-js"></i></label>
+                        </div>
+                        <div class="tech">
+                            <input type="radio" name="tech" id="bootstrap" value="Bootstrap">
+                            <label for="bootstrap"><i class="fab fa-bootstrap"></i></label>
+                        </div>
+                        <div class="tech">
+                            <input type="radio" name="tech" id="node" value="NodeJS">
+                            <label for="node"><i class="fab fa-node"></i></label>
+                        </div>
+                        <div class="tech">
+                            <input type="radio" name="tech" id="git" value="Git">
+                            <label for="git"><i class="fab fa-git"></i></label>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="box">
+                    <button type="submit" class="btn-play"><i class="fa fa-gamepad"></i> Jogar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    const btnModal = document.querySelector(".btn-modal")
+    const btnClose = document.querySelector(".btn-close")
+    const modal = document.querySelector(".background")
+
+    btnModal.addEventListener("click", () => {
+        modal.classList.remove("hide")
+    })
+
+    btnClose.addEventListener("click", () => {
+        modal.classList.add("hide")
+    })
+</script>
+<script src="https://kit.fontawesome.com/5b8f00096f.js" crossorigin="anonymous"></script>
+
+</html>

@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    overflow: hidden;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #159;
+    color: #eee;
+    font-size: 1.6rem;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    height: 100vh;
+}
+
+.background {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+
+.hide {
+    display: none;
+    transition: .4s;
+}
+
+
+.modal {
+    position: relative;
+    background-color: #eee;
+    padding: 4rem 2rem;
+    width: 36rem;
+    margin: 1rem;
+    border-radius: .4rem;
+    color: #333;
+    transition: .4s;
+}
+
+button,
+a,
+input[type="submit"] {
+    cursor: pointer;
+}

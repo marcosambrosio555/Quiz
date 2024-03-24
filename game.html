@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/game.css">
+</head>
+
+<body>
+
+    <main class="main">
+        <div class="container">
+            <div class="wrapper-top">
+                <div class="timer"></div>
+
+                <div class="top-center">
+                    <div class="order"></div>
+                    <div class="tech"></div>
+                </div>
+
+                <div class="back">
+                    <a href="/index.html" class="btnBack">
+                        Voltar
+                    </a>
+                </div>
+            </div>
+
+            <div class="wrapper-main">
+                <div class="question"></div>
+
+                <div class="options">
+                    <button class="btn-option"></button>
+                    <button class="btn-option"></button>
+                    <button class="btn-option"></button>
+                    <button class="btn-option"></button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="background game-over hide">
+            <div class="modal">
+                <h2>Fim do jogo</h2>
+
+                <div class="box">
+                    <p class="rights">Respostas certas :</p>
+                    <p class="wrongs">Respostas erradas : </p>
+                    <p class="points">Pontos : </p>
+                </div>
+
+                <div class="box">
+                    <a href="/index.html">Voltar para inicio</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="background loading hide">
+            <img src="images/loading.gif" alt="loading">
+        </div>
+
+    </main>
+    <script src="js/script.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/5b8f00096f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

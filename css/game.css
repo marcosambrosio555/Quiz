@@ -93,7 +93,7 @@
 
 .rool {
     transition: 1s;
-    transform: translateX(80rem);
+    transform: translateX(120rem);
 }
 
 .game-over h2 {

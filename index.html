@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz de desenvolvimento web</title>
-    <!-- font -->
 
+    <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -29,14 +29,14 @@
                 <button class="btn-modal"><i class="fa fa-gamepad"></i> Jogar</button>
             </section>
         </div>
+
     </main>
-    
+
 
     <div class="background hide">
         <div class="modal">
             <span class="btn-close"><i class="fa fa-times"></i></span>
             <h2>Configurações</h2>
-            <a href="./game.html">Entre aqui</a>
             <form action="./game.html" method="get">
 
                 <div class="box">
@@ -70,7 +70,7 @@
                             <input type="radio" name="tech" id="js" value="Javascript">
                             <label for="js"><i class="fab fa-js"></i></label>
                         </div>
-                        <div class="tech">
+                        <!-- <div class="tech">
                             <input type="radio" name="tech" id="bootstrap" value="Bootstrap">
                             <label for="bootstrap"><i class="fab fa-bootstrap"></i></label>
                         </div>
@@ -81,7 +81,7 @@
                         <div class="tech">
                             <input type="radio" name="tech" id="git" value="Git">
                             <label for="git"><i class="fab fa-git"></i></label>
-                        </div>
+                        </div> -->
                     </div>
 
                 </div>
@@ -92,19 +92,7 @@
         </div>
     </div>
 </body>
-<script>
-    const btnModal = document.querySelector(".btn-modal")
-    const btnClose = document.querySelector(".btn-close")
-    const modal = document.querySelector(".background")
-
-    btnModal.addEventListener("click", () => {
-        modal.classList.remove("hide")
-    })
-
-    btnClose.addEventListener("click", () => {
-        modal.classList.add("hide")
-    })
-</script>
+<script src="./js/modal.js"></script>
 <script src="https://kit.fontawesome.com/5b8f00096f.js" crossorigin="anonymous"></script>
 
 </html>

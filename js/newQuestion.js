@@ -21,7 +21,7 @@ export function newQuestion() {
 
 
     btnOptions.forEach((btn, index) => {
-        btn.innerHTML = `${questionChoosed.options[order[index]]}`
+        btn.textContent = `${questionChoosed.options[order[index]]}`
         btn.id = questionChoosed.options[order[index]]
     })
 
